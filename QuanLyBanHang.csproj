@@ -88,7 +88,9 @@
     <Compile Include="HeThong\TaiKhoan.Designer.cs">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyDataTable.cs" />
+    <Compile Include="MyDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="NghiepVu\DatHang.cs">
       <SubType>Form</SubType>
     </Compile>
