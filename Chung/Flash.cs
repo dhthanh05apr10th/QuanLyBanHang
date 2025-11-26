@@ -16,5 +16,17 @@ namespace QuanLyBanHang.Chung
         {
             InitializeComponent();
         }
+
+        private void Flash_Load(object sender, EventArgs e)
+        {
+            timer.Interval = 3000;
+            timer.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            timer.Stop();
+            this.Close();
+        }
     }
 }
