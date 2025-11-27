@@ -1,4 +1,5 @@
 ﻿using System;
+using QuanLyBanHang.QuanLyChung;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace QuanLyBanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Chung.Flash());
+            Application.Run(new NhanVien());
         }
     }
 }
