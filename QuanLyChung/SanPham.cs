@@ -149,6 +149,7 @@ namespace QuanLyBanHang.QuanLyChung
                         cmd.Parameters.Add("@TrangThai", SqlDbType.NVarChar, 20).Value = txtTrangThai.Text;
                         dataTable.Update(cmd);
                     }
+                    SanPham_Load(sender, e);
                 }
                 catch (Exception ex)
                 {

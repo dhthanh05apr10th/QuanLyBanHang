@@ -16,7 +16,7 @@ namespace QuanLyBanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyChung.NhanVien());
+            Application.Run(new QuanLyChung.ChucVu());
         }
     }
 }
