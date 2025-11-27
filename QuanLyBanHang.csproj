@@ -164,6 +164,9 @@
     <EmbeddedResource Include="QuanLyChung\KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyChung\KhoThucPham.resx">
+      <DependentUpon>KhoThucPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyChung\SanPham.resx">
       <DependentUpon>SanPham.cs</DependentUpon>
     </EmbeddedResource>

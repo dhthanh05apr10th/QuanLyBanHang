@@ -192,7 +192,7 @@
             this.dgvDanhMuc.RowHeadersWidth = 51;
             this.dgvDanhMuc.RowTemplate.Height = 24;
             this.dgvDanhMuc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhMuc.Size = new System.Drawing.Size(641, 329);
+            this.dgvDanhMuc.Size = new System.Drawing.Size(641, 218);
             this.dgvDanhMuc.TabIndex = 1;
             // 
             // label7
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 558);
+            this.ClientSize = new System.Drawing.Size(641, 447);
             this.Controls.Add(this.dgvDanhMuc);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

@@ -190,7 +190,7 @@
             this.dgvChucVu.RowHeadersWidth = 51;
             this.dgvChucVu.RowTemplate.Height = 24;
             this.dgvChucVu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvChucVu.Size = new System.Drawing.Size(639, 293);
+            this.dgvChucVu.Size = new System.Drawing.Size(639, 236);
             this.dgvChucVu.TabIndex = 1;
             // 
             // MaCV
@@ -213,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 450);
+            this.ClientSize = new System.Drawing.Size(639, 393);
             this.Controls.Add(this.dgvChucVu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
