@@ -149,6 +149,7 @@ namespace QuanLyBanHang.QuanLyChung
             {
                 this.Close();
             }
-        } 
+        }
+
     }
 }
