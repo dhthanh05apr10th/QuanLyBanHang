@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyBanHang.Chung;
+using QuanLyBanHang.HeThong;
 
 namespace QuanLyBanHang
 {
@@ -18,7 +19,7 @@ namespace QuanLyBanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AboutBox());
+            Application.Run(new Main());
         }
     }
 }

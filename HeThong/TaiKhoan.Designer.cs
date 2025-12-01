@@ -36,11 +36,11 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.cboMaNV = new System.Windows.Forms.ComboBox();
             this.cboQuyenHan = new System.Windows.Forms.ComboBox();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.txtHoVaTen = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaTaiKhoan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,6 +49,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTaiKhoan = new System.Windows.Forms.DataGridView();
+            this.MaTaiKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDangNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QuyenHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).BeginInit();
             this.SuspendLayout();
@@ -62,11 +68,11 @@
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.cboMaNV);
             this.panel1.Controls.Add(this.cboQuyenHan);
             this.panel1.Controls.Add(this.txtGhiChu);
             this.panel1.Controls.Add(this.txtTenDangNhap);
             this.panel1.Controls.Add(this.txtMatKhau);
-            this.panel1.Controls.Add(this.txtHoVaTen);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtMaTaiKhoan);
             this.panel1.Controls.Add(this.label5);
@@ -99,9 +105,10 @@
             this.btnThoat.Location = new System.Drawing.Point(841, 152);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(120, 35);
-            this.btnThoat.TabIndex = 30;
+            this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnHuyBo
             // 
@@ -110,9 +117,10 @@
             this.btnHuyBo.Location = new System.Drawing.Point(841, 112);
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.Size = new System.Drawing.Size(120, 35);
-            this.btnHuyBo.TabIndex = 29;
+            this.btnHuyBo.TabIndex = 9;
             this.btnHuyBo.Text = "Hủy bỏ";
             this.btnHuyBo.UseVisualStyleBackColor = true;
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // btnXoa
             // 
@@ -121,9 +129,10 @@
             this.btnXoa.Location = new System.Drawing.Point(715, 152);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(120, 35);
-            this.btnXoa.TabIndex = 27;
+            this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -132,9 +141,10 @@
             this.btnLuu.Location = new System.Drawing.Point(841, 72);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(120, 35);
-            this.btnLuu.TabIndex = 28;
+            this.btnLuu.TabIndex = 7;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 
@@ -143,9 +153,10 @@
             this.btnSua.Location = new System.Drawing.Point(715, 112);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(120, 35);
-            this.btnSua.TabIndex = 26;
+            this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -154,9 +165,23 @@
             this.btnThem.Location = new System.Drawing.Point(715, 72);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(120, 35);
-            this.btnThem.TabIndex = 25;
+            this.btnThem.TabIndex = 6;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // cboMaNV
+            // 
+            this.cboMaNV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cboMaNV.FormattingEnabled = true;
+            this.cboMaNV.Items.AddRange(new object[] {
+            "admin",
+            "user"});
+            this.cboMaNV.Location = new System.Drawing.Point(149, 115);
+            this.cboMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cboMaNV.Name = "cboMaNV";
+            this.cboMaNV.Size = new System.Drawing.Size(193, 28);
+            this.cboMaNV.TabIndex = 4;
             // 
             // cboQuyenHan
             // 
@@ -169,7 +194,7 @@
             this.cboQuyenHan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboQuyenHan.Name = "cboQuyenHan";
             this.cboQuyenHan.Size = new System.Drawing.Size(193, 28);
-            this.cboQuyenHan.TabIndex = 24;
+            this.cboQuyenHan.TabIndex = 4;
             // 
             // txtGhiChu
             // 
@@ -178,7 +203,7 @@
             this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(193, 26);
-            this.txtGhiChu.TabIndex = 21;
+            this.txtGhiChu.TabIndex = 5;
             // 
             // txtTenDangNhap
             // 
@@ -187,7 +212,7 @@
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(193, 26);
-            this.txtTenDangNhap.TabIndex = 22;
+            this.txtTenDangNhap.TabIndex = 1;
             // 
             // txtMatKhau
             // 
@@ -197,27 +222,18 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '•';
             this.txtMatKhau.Size = new System.Drawing.Size(193, 26);
-            this.txtMatKhau.TabIndex = 23;
-            // 
-            // txtHoVaTen
-            // 
-            this.txtHoVaTen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtHoVaTen.Location = new System.Drawing.Point(149, 116);
-            this.txtHoVaTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtHoVaTen.Name = "txtHoVaTen";
-            this.txtHoVaTen.Size = new System.Drawing.Size(193, 26);
-            this.txtHoVaTen.TabIndex = 20;
+            this.txtMatKhau.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 121);
+            this.label2.Location = new System.Drawing.Point(38, 122);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 20);
+            this.label2.Size = new System.Drawing.Size(70, 20);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Tên Nhân Viên :";
+            this.label2.Text = "Tên NV :";
             // 
             // txtMaTaiKhoan
             // 
@@ -226,7 +242,7 @@
             this.txtMaTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaTaiKhoan.Name = "txtMaTaiKhoan";
             this.txtMaTaiKhoan.Size = new System.Drawing.Size(193, 26);
-            this.txtMaTaiKhoan.TabIndex = 19;
+            this.txtMaTaiKhoan.TabIndex = 0;
             // 
             // label5
             // 
@@ -289,6 +305,13 @@
             this.dgvTaiKhoan.AllowUserToDeleteRows = false;
             this.dgvTaiKhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTaiKhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaTaiKhoa,
+            this.HoTen,
+            this.TenDangNhap,
+            this.MatKhau,
+            this.QuyenHan,
+            this.GhiChu});
             this.dgvTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTaiKhoan.Location = new System.Drawing.Point(0, 225);
             this.dgvTaiKhoan.MultiSelect = false;
@@ -299,6 +322,55 @@
             this.dgvTaiKhoan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTaiKhoan.Size = new System.Drawing.Size(989, 260);
             this.dgvTaiKhoan.TabIndex = 1;
+            this.dgvTaiKhoan.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvTaiKhoan_CellFormatting);
+            // 
+            // MaTaiKhoa
+            // 
+            this.MaTaiKhoa.DataPropertyName = "MaTaiKhoan";
+            this.MaTaiKhoa.HeaderText = "Mã Tài Khoản";
+            this.MaTaiKhoa.MinimumWidth = 8;
+            this.MaTaiKhoa.Name = "MaTaiKhoa";
+            this.MaTaiKhoa.ReadOnly = true;
+            // 
+            // HoTen
+            // 
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.MinimumWidth = 8;
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
+            // 
+            // TenDangNhap
+            // 
+            this.TenDangNhap.DataPropertyName = "TenDangNhap";
+            this.TenDangNhap.HeaderText = "Tên Đăng Nhập";
+            this.TenDangNhap.MinimumWidth = 8;
+            this.TenDangNhap.Name = "TenDangNhap";
+            this.TenDangNhap.ReadOnly = true;
+            // 
+            // MatKhau
+            // 
+            this.MatKhau.DataPropertyName = "MatKhau";
+            this.MatKhau.HeaderText = "Mật Khẩu";
+            this.MatKhau.MinimumWidth = 8;
+            this.MatKhau.Name = "MatKhau";
+            this.MatKhau.ReadOnly = true;
+            // 
+            // QuyenHan
+            // 
+            this.QuyenHan.DataPropertyName = "QuyenHan";
+            this.QuyenHan.HeaderText = "Quyền Hạng";
+            this.QuyenHan.MinimumWidth = 8;
+            this.QuyenHan.Name = "QuyenHan";
+            this.QuyenHan.ReadOnly = true;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi Chú";
+            this.GhiChu.MinimumWidth = 8;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.ReadOnly = true;
             // 
             // TaiKhoan
             // 
@@ -310,6 +382,7 @@
             this.Name = "TaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TaiKhoan";
+            this.Load += new System.EventHandler(this.TaiKhoan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaiKhoan)).EndInit();
@@ -330,7 +403,6 @@
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.TextBox txtTenDangNhap;
         private System.Windows.Forms.TextBox txtMatKhau;
-        private System.Windows.Forms.TextBox txtHoVaTen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtMaTaiKhoan;
         private System.Windows.Forms.Label label5;
@@ -340,5 +412,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dgvTaiKhoan;
+        private System.Windows.Forms.ComboBox cboMaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaTaiKhoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDangNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MatKhau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QuyenHan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
     }
 }

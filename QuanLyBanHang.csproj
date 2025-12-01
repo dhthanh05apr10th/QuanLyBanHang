@@ -149,6 +149,9 @@
     <EmbeddedResource Include="Chung\Flash.resx">
       <DependentUpon>Flash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Chung\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HeThong\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +204,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase_document.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
