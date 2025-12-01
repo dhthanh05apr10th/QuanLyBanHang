@@ -71,6 +71,12 @@
     <Compile Include="Chung\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Chung\Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chung\Support.Designer.cs">
+      <DependentUpon>Support.cs</DependentUpon>
+    </Compile>
     <Compile Include="HeThong\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
