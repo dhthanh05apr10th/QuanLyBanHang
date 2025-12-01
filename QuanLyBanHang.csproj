@@ -89,15 +89,8 @@
     <Compile Include="HeThong\TaiKhoan.Designer.cs">
       <DependentUpon>TaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="KetNoi.cs" />
     <Compile Include="MyDataTable.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="NghiepVu\DatHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NghiepVu\DatHang.Designer.cs">
-      <DependentUpon>DatHang.cs</DependentUpon>
     </Compile>
     <Compile Include="NghiepVu\ThongKeDoanhThu.cs">
       <SubType>Form</SubType>
@@ -118,6 +111,12 @@
     </Compile>
     <Compile Include="QuanLyChung\DanhMuc.Designer.cs">
       <DependentUpon>DanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyChung\HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyChung\HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyChung\KhachHang.cs">
       <SubType>Form</SubType>
@@ -170,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyChung\DanhMuc.resx">
       <DependentUpon>DanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyChung\HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyChung\KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
