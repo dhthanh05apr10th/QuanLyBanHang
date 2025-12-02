@@ -518,6 +518,7 @@
             // 
             // btnDong
             // 
+            this.btnDong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDong.Location = new System.Drawing.Point(755, 6);
             this.btnDong.Name = "btnDong";
@@ -529,6 +530,7 @@
             // 
             // btnXuatHD
             // 
+            this.btnXuatHD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnXuatHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatHD.Location = new System.Drawing.Point(567, 6);
             this.btnXuatHD.Name = "btnXuatHD";
@@ -540,6 +542,7 @@
             // 
             // btnHuy
             // 
+            this.btnHuy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Location = new System.Drawing.Point(379, 6);
             this.btnHuy.Name = "btnHuy";
@@ -551,6 +554,7 @@
             // 
             // btnLuu
             // 
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Location = new System.Drawing.Point(191, 6);
             this.btnLuu.Name = "btnLuu";
@@ -562,6 +566,7 @@
             // 
             // btnThem
             // 
+            this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Location = new System.Drawing.Point(3, 6);
             this.btnThem.Name = "btnThem";
