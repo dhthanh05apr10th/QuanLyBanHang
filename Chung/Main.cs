@@ -484,8 +484,6 @@ namespace QuanLyBanHang.Chung
             ChuaDangNhap();
             mnuDangNhap_Click(sender, e);
         }
-
-
     }
 
 }
