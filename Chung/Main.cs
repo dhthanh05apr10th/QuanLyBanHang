@@ -544,6 +544,5 @@ namespace QuanLyBanHang.Chung
         }
         #endregion
     }
-
 }
 
