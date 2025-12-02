@@ -50,10 +50,8 @@ namespace QuanLyBanHang.Chung
         LamLai:
             if (dangNhap.ShowDialog() == DialogResult.OK)
             {
-                //Lấy tên đăng nhập và mật khẩu từ form đăng nhập
                 string tenDangNhap = dangNhap.TenDangNhapValue;
                 string matKhau = dangNhap.MatKhauValue;
-                //Kiểm tra đăng nhập
                 if (tenDangNhap == "")
                 {
                     MessageBox.Show("Vui lòng nhập tên đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -64,7 +62,6 @@ namespace QuanLyBanHang.Chung
                 }
                 else
                 {
-                    // Xử lý lấy dữ liệu để kiểm tra
                     MyDataTable dataTable = new MyDataTable();
                     dataTable.OpenConnection();
 
@@ -76,39 +73,33 @@ namespace QuanLyBanHang.Chung
                     cmd.Parameters.Add("@Username", SqlDbType.NVarChar, 20).Value = tenDangNhap;
                     dataTable.Fill(cmd);
 
-                    if (dataTable.Rows.Count > 0) // Có tồn tại tài khoản
+                    if (dataTable.Rows.Count > 0)
                     {
-                        // Lấy dòng thông tin đầu tiên
                         hoTen = dataTable.Rows[0]["HoTen"].ToString();
                         string quyenHan = dataTable.Rows[0]["QuyenHan"].ToString();
                         string matKhauMaHoa = dataTable.Rows[0]["MatKhau"].ToString();
 
                         bool passwordMatches = false;
 
-                        // Try verify as bcrypt; if stored value is not a valid bcrypt hash, fall back to legacy plain-text comparison
                         try
                         {
-                            // Quick heuristic: bcrypt hashes start with $2 (eg. $2a$, $2b$, $2y$)
                             if (!string.IsNullOrWhiteSpace(matKhauMaHoa) && matKhauMaHoa.StartsWith("$2"))
                             {
                                 passwordMatches = BC.Verify(matKhau, matKhauMaHoa);
                             }
                             else
                             {
-                                // Force a specific exception path to go to catch for legacy handling
                                 throw new BCrypt.Net.SaltParseException("Legacy or invalid stored password format");
                             }
                         }
                         catch (BCrypt.Net.SaltParseException)
                         {
-                            // Legacy value (likely plain text). Compare directly, then migrate to bcrypt if it matches.
                             if (matKhau == matKhauMaHoa)
                             {
                                 passwordMatches = true;
 
                                 try
                                 {
-                                    // Re-hash with bcrypt and update DB to migrate this account
                                     string newHash = BC.HashPassword(matKhau);
                                     string updateSql = "UPDATE TaiKhoan SET MatKhau = @MatKhau WHERE TenDangNhap = @Username";
                                     SqlCommand updateCmd = new SqlCommand(updateSql);
@@ -128,7 +119,6 @@ namespace QuanLyBanHang.Chung
                         }
                         catch (Exception)
                         {
-                            // Any other Verify error: treat as non-match (optionally log)
                             passwordMatches = false;
                         }
 
@@ -136,17 +126,13 @@ namespace QuanLyBanHang.Chung
                         if (passwordMatches)
                         {
                             if (quyenHan == "Admin")
-                                // Gọi hàm xử lý giao diện dành cho Admin
                                 QuanTriVien();
                             else if (quyenHan == "Manager")
-                                // Gọi hàm xử lý giao diện dành cho quản lý
                                 QuanLy();
                             else if (quyenHan == "Employee")
-                                // Gọi hàm xử lý giao diện dành cho nhân viên
                                 ThanhVien();
 
                             else
-                                // Gọi hàm xử lý giao diện lúc chưa đăng nhập
                                 ChuaDangNhap();
                         }
                         else
