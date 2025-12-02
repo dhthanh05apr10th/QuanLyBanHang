@@ -15,11 +15,11 @@ namespace QuanLyBanHang
         static void Main()
         {
             System.Data.DataTable dtHeader = new System.Data.DataTable("dtHeader");
-            System.Data.DataTable dtDetail = new System.Data.DataTable("dtDetail");
+            System.Data.DataTable dtDetail = new System.Data.DataTable("ChiTietHoaDon");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Chung.Main());
+            Application.Run(new QuanLyChung.HoaDon());
         }
     }
 }
