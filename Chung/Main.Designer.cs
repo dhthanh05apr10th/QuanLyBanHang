@@ -54,7 +54,6 @@
             this.mnuHoTro = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinPhầnMềmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuThongTin = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.btnDangNhap = new System.Windows.Forms.ToolStripButton();
             this.btnDangXuat = new System.Windows.Forms.ToolStripButton();
@@ -71,7 +70,6 @@
             this.btnThoat = new System.Windows.Forms.ToolStripButton();
             this.statusStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,7 +138,7 @@
             // 
             this.mnuDangNhap.Image = global::QuanLyBanHang.Properties.Resources.login_161;
             this.mnuDangNhap.Name = "mnuDangNhap";
-            this.mnuDangNhap.Size = new System.Drawing.Size(174, 26);
+            this.mnuDangNhap.Size = new System.Drawing.Size(228, 30);
             this.mnuDangNhap.Text = "Đăng &nhập...";
             this.mnuDangNhap.Click += new System.EventHandler(this.mnuDangNhap_Click);
             // 
@@ -148,7 +146,7 @@
             // 
             this.mnuDangXuat.Image = global::QuanLyBanHang.Properties.Resources.logout_16;
             this.mnuDangXuat.Name = "mnuDangXuat";
-            this.mnuDangXuat.Size = new System.Drawing.Size(174, 26);
+            this.mnuDangXuat.Size = new System.Drawing.Size(228, 30);
             this.mnuDangXuat.Text = "Đăng &xuất";
             this.mnuDangXuat.Click += new System.EventHandler(this.mnuDangXuat_Click);
             // 
@@ -156,7 +154,7 @@
             // 
             this.mnuThoat.Image = global::QuanLyBanHang.Properties.Resources.exit;
             this.mnuThoat.Name = "mnuThoat";
-            this.mnuThoat.Size = new System.Drawing.Size(174, 26);
+            this.mnuThoat.Size = new System.Drawing.Size(228, 30);
             this.mnuThoat.Text = "&Thoát";
             this.mnuThoat.Click += new System.EventHandler(this.mnuThoat_Click);
             // 
@@ -180,7 +178,7 @@
             // 
             this.mnuChucVu.Image = global::QuanLyBanHang.Properties.Resources.briefcase;
             this.mnuChucVu.Name = "mnuChucVu";
-            this.mnuChucVu.Size = new System.Drawing.Size(270, 34);
+            this.mnuChucVu.Size = new System.Drawing.Size(228, 30);
             this.mnuChucVu.Text = "&Chức vụ...";
             this.mnuChucVu.Click += new System.EventHandler(this.mnuChucVu_Click);
             // 
@@ -188,7 +186,7 @@
             // 
             this.mnuDanhMuc.Image = global::QuanLyBanHang.Properties.Resources.address_book2;
             this.mnuDanhMuc.Name = "mnuDanhMuc";
-            this.mnuDanhMuc.Size = new System.Drawing.Size(270, 34);
+            this.mnuDanhMuc.Size = new System.Drawing.Size(228, 30);
             this.mnuDanhMuc.Text = "Danh &mục...";
             this.mnuDanhMuc.Click += new System.EventHandler(this.mnuDanhMuc_Click_1);
             // 
@@ -196,7 +194,7 @@
             // 
             this.mnuKhachHang.Image = global::QuanLyBanHang.Properties.Resources.businessman2;
             this.mnuKhachHang.Name = "mnuKhachHang";
-            this.mnuKhachHang.Size = new System.Drawing.Size(270, 34);
+            this.mnuKhachHang.Size = new System.Drawing.Size(228, 30);
             this.mnuKhachHang.Text = "Khách &hàng...";
             this.mnuKhachHang.Click += new System.EventHandler(this.mnuKhachHang_Click_1);
             // 
@@ -204,7 +202,7 @@
             // 
             this.mnuKho.Image = global::QuanLyBanHang.Properties.Resources.package;
             this.mnuKho.Name = "mnuKho";
-            this.mnuKho.Size = new System.Drawing.Size(270, 34);
+            this.mnuKho.Size = new System.Drawing.Size(228, 30);
             this.mnuKho.Text = "Kho &thực phẩm...";
             this.mnuKho.Click += new System.EventHandler(this.mnuKho_Click_1);
             // 
@@ -212,7 +210,7 @@
             // 
             this.mnuNhanVien.Image = global::QuanLyBanHang.Properties.Resources.user1_time;
             this.mnuNhanVien.Name = "mnuNhanVien";
-            this.mnuNhanVien.Size = new System.Drawing.Size(270, 34);
+            this.mnuNhanVien.Size = new System.Drawing.Size(228, 30);
             this.mnuNhanVien.Text = "Nhân &viên...";
             this.mnuNhanVien.Click += new System.EventHandler(this.mnuNhanVien_Click_1);
             // 
@@ -220,7 +218,7 @@
             // 
             this.mnuTaiKhoan.Image = global::QuanLyBanHang.Properties.Resources.user_headset;
             this.mnuTaiKhoan.Name = "mnuTaiKhoan";
-            this.mnuTaiKhoan.Size = new System.Drawing.Size(270, 34);
+            this.mnuTaiKhoan.Size = new System.Drawing.Size(228, 30);
             this.mnuTaiKhoan.Text = "Tài &khoản...";
             this.mnuTaiKhoan.Click += new System.EventHandler(this.mnuTaiKhoan_Click_1);
             // 
@@ -228,7 +226,7 @@
             // 
             this.mnuSanPham.Image = ((System.Drawing.Image)(resources.GetObject("mnuSanPham.Image")));
             this.mnuSanPham.Name = "mnuSanPham";
-            this.mnuSanPham.Size = new System.Drawing.Size(270, 34);
+            this.mnuSanPham.Size = new System.Drawing.Size(228, 30);
             this.mnuSanPham.Text = "Sản &phẩm...";
             this.mnuSanPham.Click += new System.EventHandler(this.mnuSanPham_Click_1);
             // 
@@ -236,7 +234,7 @@
             // 
             this.mnuHoaDon.Image = global::QuanLyBanHang.Properties.Resources.note;
             this.mnuHoaDon.Name = "mnuHoaDon";
-            this.mnuHoaDon.Size = new System.Drawing.Size(270, 34);
+            this.mnuHoaDon.Size = new System.Drawing.Size(228, 30);
             this.mnuHoaDon.Text = "&Hóa đơn...";
             this.mnuHoaDon.Click += new System.EventHandler(this.mnuHoaDon_Click_1);
             // 
@@ -298,19 +296,6 @@
             this.mnuThongTin.Size = new System.Drawing.Size(249, 26);
             this.mnuThongTin.Text = "&Thông tin về chúng tôi...";
             this.mnuThongTin.Click += new System.EventHandler(this.mnuThongTin_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Controls.Add(this.toolStrip);
-            this.panel1.Controls.Add(this.menuStrip);
-            this.panel1.Controls.Add(this.statusStrip);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1280, 454);
-            this.panel1.TabIndex = 3;
             // 
             // toolStrip
             // 
@@ -450,7 +435,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 454);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.statusStrip);
+            this.Controls.Add(this.toolStrip);
+            this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -462,11 +449,10 @@
             this.statusStrip.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -491,7 +477,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuTroGiup;
         private System.Windows.Forms.ToolStripMenuItem mnuHuongDan;
         private System.Windows.Forms.ToolStripMenuItem mnuHoTro;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.ToolStripButton btnDangNhap;
         private System.Windows.Forms.ToolStripButton btnDangXuat;
