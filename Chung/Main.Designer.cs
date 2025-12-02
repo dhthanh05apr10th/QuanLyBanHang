@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblTrangThai = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
@@ -80,7 +80,7 @@
             this.statusStrip.BackColor = System.Drawing.Color.White;
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
+            this.lblTrangThai,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel4});
             this.statusStrip.Location = new System.Drawing.Point(0, 536);
@@ -89,11 +89,11 @@
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // lblTrangThai
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(170, 25);
-            this.toolStripStatusLabel1.Text = "Thiết bởi Coffee NB.";
+            this.lblTrangThai.Name = "lblTrangThai";
+            this.lblTrangThai.Size = new System.Drawing.Size(170, 25);
+            this.lblTrangThai.Text = "Thiết bởi Coffee NB.";
             // 
             // toolStripStatusLabel2
             // 
@@ -141,6 +141,7 @@
             this.mnuDangNhap.Name = "mnuDangNhap";
             this.mnuDangNhap.Size = new System.Drawing.Size(270, 34);
             this.mnuDangNhap.Text = "Đăng &nhập...";
+            this.mnuDangNhap.Click += new System.EventHandler(this.mnuDangNhap_Click);
             // 
             // mnuDangXuat
             // 
@@ -155,6 +156,7 @@
             this.mnuThoat.Name = "mnuThoat";
             this.mnuThoat.Size = new System.Drawing.Size(270, 34);
             this.mnuThoat.Text = "&Thoát";
+            this.mnuThoat.Click += new System.EventHandler(this.mnuThoat_Click);
             // 
             // mnuQuanLy
             // 
@@ -176,56 +178,57 @@
             // 
             this.mnuChucVu.Image = global::QuanLyBanHang.Properties.Resources.briefcase;
             this.mnuChucVu.Name = "mnuChucVu";
-            this.mnuChucVu.Size = new System.Drawing.Size(270, 34);
+            this.mnuChucVu.Size = new System.Drawing.Size(248, 34);
             this.mnuChucVu.Text = "&Chức vụ...";
+            this.mnuChucVu.Click += new System.EventHandler(this.mnuChucVu_Click);
             // 
             // mnuDanhMuc
             // 
             this.mnuDanhMuc.Image = global::QuanLyBanHang.Properties.Resources.address_book2;
             this.mnuDanhMuc.Name = "mnuDanhMuc";
-            this.mnuDanhMuc.Size = new System.Drawing.Size(270, 34);
+            this.mnuDanhMuc.Size = new System.Drawing.Size(248, 34);
             this.mnuDanhMuc.Text = "Danh &mục...";
             // 
             // mnuKhachHang
             // 
             this.mnuKhachHang.Image = global::QuanLyBanHang.Properties.Resources.businessman2;
             this.mnuKhachHang.Name = "mnuKhachHang";
-            this.mnuKhachHang.Size = new System.Drawing.Size(270, 34);
+            this.mnuKhachHang.Size = new System.Drawing.Size(248, 34);
             this.mnuKhachHang.Text = "Khách &hàng...";
             // 
             // mnuKho
             // 
             this.mnuKho.Image = global::QuanLyBanHang.Properties.Resources.package;
             this.mnuKho.Name = "mnuKho";
-            this.mnuKho.Size = new System.Drawing.Size(270, 34);
+            this.mnuKho.Size = new System.Drawing.Size(248, 34);
             this.mnuKho.Text = "Kho &thực phẩm...";
             // 
             // mnuNhanVien
             // 
             this.mnuNhanVien.Image = global::QuanLyBanHang.Properties.Resources.user1_time;
             this.mnuNhanVien.Name = "mnuNhanVien";
-            this.mnuNhanVien.Size = new System.Drawing.Size(270, 34);
+            this.mnuNhanVien.Size = new System.Drawing.Size(248, 34);
             this.mnuNhanVien.Text = "Nhân &viên...";
             // 
             // mnuTaiKhoan
             // 
             this.mnuTaiKhoan.Image = global::QuanLyBanHang.Properties.Resources.user_headset;
             this.mnuTaiKhoan.Name = "mnuTaiKhoan";
-            this.mnuTaiKhoan.Size = new System.Drawing.Size(270, 34);
+            this.mnuTaiKhoan.Size = new System.Drawing.Size(248, 34);
             this.mnuTaiKhoan.Text = "Tài &khoản...";
             // 
             // mnuSanPham
             // 
             this.mnuSanPham.Image = ((System.Drawing.Image)(resources.GetObject("mnuSanPham.Image")));
             this.mnuSanPham.Name = "mnuSanPham";
-            this.mnuSanPham.Size = new System.Drawing.Size(270, 34);
+            this.mnuSanPham.Size = new System.Drawing.Size(248, 34);
             this.mnuSanPham.Text = "Sản &phẩm...";
             // 
             // mnuHoaDon
             // 
             this.mnuHoaDon.Image = global::QuanLyBanHang.Properties.Resources.note;
             this.mnuHoaDon.Name = "mnuHoaDon";
-            this.mnuHoaDon.Size = new System.Drawing.Size(270, 34);
+            this.mnuHoaDon.Size = new System.Drawing.Size(248, 34);
             this.mnuHoaDon.Text = "&Hóa đơn...";
             // 
             // mnuThongKe
@@ -417,6 +420,7 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(85, 29);
             this.btnThoat.Text = "Thoát";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // Main
             // 
@@ -428,6 +432,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.menuStrip.ResumeLayout(false);
@@ -478,7 +483,7 @@
         private System.Windows.Forms.ToolStripButton btnTaiKhoan;
         private System.Windows.Forms.ToolStripMenuItem thôngTinPhầnMềmToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnuThongTin;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel lblTrangThai;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripMenuItem mnuTaiKhoan;

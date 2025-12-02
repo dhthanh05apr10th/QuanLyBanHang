@@ -16,6 +16,15 @@ namespace QuanLyBanHang.HeThong
         {
             InitializeComponent();
         }
+        public string TenDangNhapValue
+        {
+            get { return txtTenDangNhap.Text; }
+        }
+
+        public string MatKhauValue
+        {
+            get { return txtMatKhau.Text; }
+        }
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
