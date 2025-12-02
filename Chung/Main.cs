@@ -33,6 +33,8 @@ namespace QuanLyBanHang.Chung
         HoaDon hoaDon = null;
         TaiKhoan taiKhoan = null;
         DangNhap dangNhap = null;
+        HuongDanSuDung huongDanSuDung = null;
+        Support hoTro = null;
         String hoTen = "";
 
         #endregion
@@ -316,9 +318,14 @@ namespace QuanLyBanHang.Chung
             {
                 chucVu.Activate();
             }
-
         }
-        private void mnuDanhMuc_Click(object sender, EventArgs e)
+        private void Main_Load(object sender, EventArgs e)
+        {
+            ChuaDangNhap();
+            mnuDangNhap_Click(sender, e);
+        }
+
+        private void mnuDanhMuc_Click_1(object sender, EventArgs e)
         {
             if (danhMuc == null || danhMuc.IsDisposed)
             {
@@ -332,7 +339,8 @@ namespace QuanLyBanHang.Chung
                 danhMuc.Activate();
             }
         }
-        private void mnuKhachHang_Click(object sender, EventArgs e)
+
+        private void mnuKhachHang_Click_1(object sender, EventArgs e)
         {
             if (KhachHang == null || KhachHang.IsDisposed)
             {
@@ -346,7 +354,8 @@ namespace QuanLyBanHang.Chung
                 KhachHang.Activate();
             }
         }
-        private void mnuKho_Click(object sender, EventArgs e)
+
+        private void mnuKho_Click_1(object sender, EventArgs e)
         {
             if (khoThucPham == null || khoThucPham.IsDisposed)
             {
@@ -361,7 +370,8 @@ namespace QuanLyBanHang.Chung
                 khoThucPham.Activate();
             }
         }
-        private void mnuNhanVien_Click(object sender, EventArgs e)
+
+        private void mnuNhanVien_Click_1(object sender, EventArgs e)
         {
             if (nhanVien == null || nhanVien.IsDisposed)
             {
@@ -376,36 +386,8 @@ namespace QuanLyBanHang.Chung
                 nhanVien.Activate();
             }
         }
-        private void mnuSanPham_Click(object sender, EventArgs e)
-        {
-            if (sanPham == null || sanPham.IsDisposed)
-            {
-                sanPham = new SanPham();
-                sanPham.MdiParent = this;
-                sanPham.FormClosed += (s, args) => sanPham = null;
-                sanPham.Show();
-            }
-            else
-            {
-                sanPham.Activate();
-            }
-        }
-        private void mnuHoaDon_Click(object sender, EventArgs e)
-        {
-            if (hoaDon == null || hoaDon.IsDisposed)
-            {
-                hoaDon = new HoaDon();
-                hoaDon.MdiParent = this;
-                hoaDon.FormClosed += (s, args) => hoaDon = null;
 
-                hoaDon.Show();
-            }
-            else
-            {
-                hoaDon.Activate();
-            }
-        }
-        private void mnuTaiKhoan_Click(object sender, EventArgs e)
+        private void mnuTaiKhoan_Click_1(object sender, EventArgs e)
         {
             if (taiKhoan == null || taiKhoan.IsDisposed)
             {
@@ -420,6 +402,47 @@ namespace QuanLyBanHang.Chung
                 taiKhoan.Activate();
             }
         }
+
+        private void mnuSanPham_Click_1(object sender, EventArgs e)
+        {
+            if (sanPham == null || sanPham.IsDisposed)
+            {
+                sanPham = new SanPham();
+                sanPham.MdiParent = this;
+                sanPham.FormClosed += (s, args) => sanPham = null;
+                sanPham.Show();
+            }
+            else
+            {
+                sanPham.Activate();
+            }
+        }
+
+        private void mnuHoaDon_Click_1(object sender, EventArgs e)
+        {
+            if (hoaDon == null || hoaDon.IsDisposed)
+            {
+                hoaDon = new HoaDon();
+                hoaDon.MdiParent = this;
+                hoaDon.FormClosed += (s, args) => hoaDon = null;
+
+                hoaDon.Show();
+            }
+            else
+            {
+                hoaDon.Activate();
+            }
+        }
+        private void mnuDangXuat_Click(object sender, EventArgs e)
+        {
+            ChuaDangNhap();
+            foreach (Form Child in this.MdiChildren)
+            {
+                Child.Close();
+            }
+        }
+    
+       
         #endregion
 
         #region Thống Kê Doanh Thu
@@ -427,63 +450,99 @@ namespace QuanLyBanHang.Chung
         #endregion
 
         #region Trợ Giúp
+       private void mnuHuongDan_Click(object sender, EventArgs e)
+        {
+            if (huongDanSuDung == null || huongDanSuDung.IsDisposed)
+            {
+                huongDanSuDung = new HuongDanSuDung();
+                huongDanSuDung.MdiParent = this;
+                huongDanSuDung.FormClosed += (s, args) => huongDanSuDung = null;
+                huongDanSuDung.Show();
+            }
+            else
+            {
+                huongDanSuDung.Activate();
+            }
+        }        
+        private void mnuHoTro_Click(object sender, EventArgs e)
+        {
+            if (hoTro == null || hoTro.IsDisposed)
+            {
+                hoTro = new Support();
+                hoTro.MdiParent = this;
+                hoTro.FormClosed += (s, args) => hoTro = null;
+                hoTro.Show();
+            }
+            else
+            {
+                hoTro.Activate();
+            }
+
+        }     
 
         #endregion
 
         #region Thông tin phân mềm
+        private void mnuThongTin_Click(object sender, EventArgs e)
+        {
+            AboutBox thongTinPhanMem = new AboutBox();
+            thongTinPhanMem.ShowDialog();
 
+        }
         #endregion
 
         #region Các nút trên thanh công cụ
-        private void btnDangNhap_Click(object sender, EventArgs e)
+
+        private void btnDangNhap_Click_1(object sender, EventArgs e)
         {
             mnuDangNhap_Click(sender, e);
         }
-        private void btnDangXuat_Click(object sender, EventArgs e)
+
+        private void btnDangXuat_Click_1(object sender, EventArgs e)
         {
-            mnuThoat_Click(sender, e);
+            mnuDangXuat_Click(sender, e);
         }
-        private void btnChucVu_Click(object sender, EventArgs e)
+
+        private void btnChucVu_Click_1(object sender, EventArgs e)
         {
             mnuChucVu_Click(sender, e);
         }
-        private void btnDanhMuc_Click(object sender, EventArgs e)
+
+        private void btnDanhMuc_Click_1(object sender, EventArgs e)
         {
-            mnuDanhMuc_Click(sender, e);
-        }
-        private void btnKhachHang_Click(object sender, EventArgs e)
-        {
-            mnuKhachHang_Click(sender, e);
-        }
-        private void btnKhoThucPham_Click(object sender, EventArgs e)
-        {
-            mnuKho_Click(sender, e);
-        }
-        private void btnNhanVien_Click(object sender, EventArgs e)
-        {
-            mnuNhanVien_Click(sender, e);
-        }
-        private void btnSanPham_Click(object sender, EventArgs e)
-        {
-            mnuSanPham_Click(sender, e);
-        }
-        private void btnHoaDon_Click(object sender, EventArgs e)
-        {
-            mnuHoaDon_Click(sender, e);
-        }
-        private void btnTaiKhoan_Click(object sender, EventArgs e)
-        {
-            mnuTaiKhoan_Click(sender, e);
+            mnuDanhMuc_Click_1(sender, e);
         }
 
+        private void btnKhachHang_Click_1(object sender, EventArgs e)
+        {
+            mnuKhachHang_Click_1(sender, e);
+        }
 
+        private void btnKhoThucPham_Click_1(object sender, EventArgs e)
+        {
+            mnuKho_Click_1(sender, e);
+        }
+
+        private void btnNhanVien_Click_1(object sender, EventArgs e)
+        {
+            mnuNhanVien_Click_1(sender, e);
+        }
+
+        private void btnTaiKhoan_Click_1(object sender, EventArgs e)
+        {
+            mnuTaiKhoan_Click_1(sender, e);
+        }
+
+        private void btnSanPham_Click_1(object sender, EventArgs e)
+        {
+            mnuSanPham_Click_1(sender, e);
+        }
+
+        private void btnHoaDon_Click_1(object sender, EventArgs e)
+        {
+            mnuHoaDon_Click_1(sender, e);
+        }
         #endregion
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-            ChuaDangNhap();
-            mnuDangNhap_Click(sender, e);
-        }
     }
 
 }

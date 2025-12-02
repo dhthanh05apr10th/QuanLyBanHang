@@ -150,6 +150,7 @@
             this.mnuDangXuat.Name = "mnuDangXuat";
             this.mnuDangXuat.Size = new System.Drawing.Size(174, 26);
             this.mnuDangXuat.Text = "Đăng &xuất";
+            this.mnuDangXuat.Click += new System.EventHandler(this.mnuDangXuat_Click);
             // 
             // mnuThoat
             // 
@@ -179,7 +180,7 @@
             // 
             this.mnuChucVu.Image = global::QuanLyBanHang.Properties.Resources.briefcase;
             this.mnuChucVu.Name = "mnuChucVu";
-            this.mnuChucVu.Size = new System.Drawing.Size(202, 26);
+            this.mnuChucVu.Size = new System.Drawing.Size(270, 34);
             this.mnuChucVu.Text = "&Chức vụ...";
             this.mnuChucVu.Click += new System.EventHandler(this.mnuChucVu_Click);
             // 
@@ -187,50 +188,57 @@
             // 
             this.mnuDanhMuc.Image = global::QuanLyBanHang.Properties.Resources.address_book2;
             this.mnuDanhMuc.Name = "mnuDanhMuc";
-            this.mnuDanhMuc.Size = new System.Drawing.Size(202, 26);
+            this.mnuDanhMuc.Size = new System.Drawing.Size(270, 34);
             this.mnuDanhMuc.Text = "Danh &mục...";
+            this.mnuDanhMuc.Click += new System.EventHandler(this.mnuDanhMuc_Click_1);
             // 
             // mnuKhachHang
             // 
             this.mnuKhachHang.Image = global::QuanLyBanHang.Properties.Resources.businessman2;
             this.mnuKhachHang.Name = "mnuKhachHang";
-            this.mnuKhachHang.Size = new System.Drawing.Size(202, 26);
+            this.mnuKhachHang.Size = new System.Drawing.Size(270, 34);
             this.mnuKhachHang.Text = "Khách &hàng...";
+            this.mnuKhachHang.Click += new System.EventHandler(this.mnuKhachHang_Click_1);
             // 
             // mnuKho
             // 
             this.mnuKho.Image = global::QuanLyBanHang.Properties.Resources.package;
             this.mnuKho.Name = "mnuKho";
-            this.mnuKho.Size = new System.Drawing.Size(202, 26);
+            this.mnuKho.Size = new System.Drawing.Size(270, 34);
             this.mnuKho.Text = "Kho &thực phẩm...";
+            this.mnuKho.Click += new System.EventHandler(this.mnuKho_Click_1);
             // 
             // mnuNhanVien
             // 
             this.mnuNhanVien.Image = global::QuanLyBanHang.Properties.Resources.user1_time;
             this.mnuNhanVien.Name = "mnuNhanVien";
-            this.mnuNhanVien.Size = new System.Drawing.Size(202, 26);
+            this.mnuNhanVien.Size = new System.Drawing.Size(270, 34);
             this.mnuNhanVien.Text = "Nhân &viên...";
+            this.mnuNhanVien.Click += new System.EventHandler(this.mnuNhanVien_Click_1);
             // 
             // mnuTaiKhoan
             // 
             this.mnuTaiKhoan.Image = global::QuanLyBanHang.Properties.Resources.user_headset;
             this.mnuTaiKhoan.Name = "mnuTaiKhoan";
-            this.mnuTaiKhoan.Size = new System.Drawing.Size(202, 26);
+            this.mnuTaiKhoan.Size = new System.Drawing.Size(270, 34);
             this.mnuTaiKhoan.Text = "Tài &khoản...";
+            this.mnuTaiKhoan.Click += new System.EventHandler(this.mnuTaiKhoan_Click_1);
             // 
             // mnuSanPham
             // 
             this.mnuSanPham.Image = ((System.Drawing.Image)(resources.GetObject("mnuSanPham.Image")));
             this.mnuSanPham.Name = "mnuSanPham";
-            this.mnuSanPham.Size = new System.Drawing.Size(202, 26);
+            this.mnuSanPham.Size = new System.Drawing.Size(270, 34);
             this.mnuSanPham.Text = "Sản &phẩm...";
+            this.mnuSanPham.Click += new System.EventHandler(this.mnuSanPham_Click_1);
             // 
             // mnuHoaDon
             // 
             this.mnuHoaDon.Image = global::QuanLyBanHang.Properties.Resources.note;
             this.mnuHoaDon.Name = "mnuHoaDon";
-            this.mnuHoaDon.Size = new System.Drawing.Size(202, 26);
+            this.mnuHoaDon.Size = new System.Drawing.Size(270, 34);
             this.mnuHoaDon.Text = "&Hóa đơn...";
+            this.mnuHoaDon.Click += new System.EventHandler(this.mnuHoaDon_Click_1);
             // 
             // mnuThongKe
             // 
@@ -264,6 +272,7 @@
             this.mnuHuongDan.Name = "mnuHuongDan";
             this.mnuHuongDan.Size = new System.Drawing.Size(233, 26);
             this.mnuHuongDan.Text = "Hướng &dẫn sử dụng...";
+            this.mnuHuongDan.Click += new System.EventHandler(this.mnuHuongDan_Click);
             // 
             // mnuHoTro
             // 
@@ -271,6 +280,7 @@
             this.mnuHoTro.Name = "mnuHoTro";
             this.mnuHoTro.Size = new System.Drawing.Size(233, 26);
             this.mnuHoTro.Text = "&Hỗ trợ...";
+            this.mnuHoTro.Click += new System.EventHandler(this.mnuHoTro_Click);
             // 
             // thôngTinPhầnMềmToolStripMenuItem
             // 
@@ -287,6 +297,7 @@
             this.mnuThongTin.Name = "mnuThongTin";
             this.mnuThongTin.Size = new System.Drawing.Size(249, 26);
             this.mnuThongTin.Text = "&Thông tin về chúng tôi...";
+            this.mnuThongTin.Click += new System.EventHandler(this.mnuThongTin_Click);
             // 
             // panel1
             // 
@@ -332,6 +343,7 @@
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(110, 28);
             this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click_1);
             // 
             // btnDangXuat
             // 
@@ -340,6 +352,7 @@
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(105, 28);
             this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click_1);
             // 
             // toolStripSeparator1
             // 
@@ -353,6 +366,7 @@
             this.btnChucVu.Name = "btnChucVu";
             this.btnChucVu.Size = new System.Drawing.Size(91, 28);
             this.btnChucVu.Text = "Chức Vụ";
+            this.btnChucVu.Click += new System.EventHandler(this.btnChucVu_Click_1);
             // 
             // btnDanhMuc
             // 
@@ -361,6 +375,7 @@
             this.btnDanhMuc.Name = "btnDanhMuc";
             this.btnDanhMuc.Size = new System.Drawing.Size(104, 28);
             this.btnDanhMuc.Text = "Danh Mục";
+            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click_1);
             // 
             // btnKhachHang
             // 
@@ -369,6 +384,7 @@
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(117, 28);
             this.btnKhachHang.Text = "Khách Hàng";
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click_1);
             // 
             // btnKhoThucPham
             // 
@@ -377,6 +393,7 @@
             this.btnKhoThucPham.Name = "btnKhoThucPham";
             this.btnKhoThucPham.Size = new System.Drawing.Size(140, 28);
             this.btnKhoThucPham.Text = "Kho Thực Phẩm";
+            this.btnKhoThucPham.Click += new System.EventHandler(this.btnKhoThucPham_Click_1);
             // 
             // btnNhanVien
             // 
@@ -385,6 +402,7 @@
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Size = new System.Drawing.Size(105, 28);
             this.btnNhanVien.Text = "Nhân Viên";
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click_1);
             // 
             // btnTaiKhoan
             // 
@@ -393,6 +411,7 @@
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Size = new System.Drawing.Size(101, 28);
             this.btnTaiKhoan.Text = "Tài Khoản";
+            this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click_1);
             // 
             // btnSanPham
             // 
@@ -401,6 +420,7 @@
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.Size = new System.Drawing.Size(102, 28);
             this.btnSanPham.Text = "Sản Phẩm";
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click_1);
             // 
             // btnHoaDon
             // 
@@ -409,6 +429,7 @@
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(97, 28);
             this.btnHoaDon.Text = "Hóa Đơn";
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click_1);
             // 
             // toolStripSeparator2
             // 
@@ -430,6 +451,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 454);
             this.Controls.Add(this.panel1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Main";
