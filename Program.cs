@@ -17,9 +17,12 @@ namespace QuanLyBanHang
         [STAThread]
         static void Main()
         {
+            System.Data.DataTable dtHeader = new System.Data.DataTable("dtHeader");
+            System.Data.DataTable dtDetail = new System.Data.DataTable("dtDetail");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new QuanLyChung.HoaDon());
         }
     }
 }

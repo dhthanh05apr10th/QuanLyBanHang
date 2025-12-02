@@ -12,7 +12,7 @@ namespace QuanLyBanHang
     internal class MyDataTable : DataTable
     {
         //Biến toàn cục
-        SqlConnection connection;
+        public SqlConnection connection;
         SqlDataAdapter adapter;
         SqlCommand command;
 
@@ -93,5 +93,22 @@ namespace QuanLyBanHang
             }
             return result;
         }
+
+        public object ExecuteScalar(SqlCommand cmd)
+        {
+            object result = null;
+            try
+            {
+                cmd.Connection = connection;
+                result = cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thực thi câu lệnh Sql!\nLỗi: " + ex.Message, "Lỗi truy vấn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return result;
+        }
+
+        
     }
 }
