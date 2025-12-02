@@ -11,9 +11,6 @@ namespace QuanLyBanHang
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -22,7 +19,7 @@ namespace QuanLyBanHang
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyChung.HoaDon());
+            Application.Run(new Chung.Main());
         }
     }
 }
