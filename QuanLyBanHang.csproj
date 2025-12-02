@@ -59,11 +59,11 @@
     <Compile Include="Chung\Flash.Designer.cs">
       <DependentUpon>Flash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Chung\Help.cs">
+    <Compile Include="Chung\HuongDanSuDung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chung\Help.Designer.cs">
-      <DependentUpon>Help.cs</DependentUpon>
+    <Compile Include="Chung\HuongDanSuDung.Designer.cs">
+      <DependentUpon>HuongDanSuDung.cs</DependentUpon>
     </Compile>
     <Compile Include="Chung\Main.cs">
       <SubType>Form</SubType>
@@ -154,8 +154,8 @@
     <EmbeddedResource Include="Chung\Flash.resx">
       <DependentUpon>Flash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chung\Help.resx">
-      <DependentUpon>Help.cs</DependentUpon>
+    <EmbeddedResource Include="Chung\HuongDanSuDung.resx">
+      <DependentUpon>HuongDanSuDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Chung\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -227,6 +227,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\briefcase_document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chucnang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_time.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_headset.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoppingcart_full.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fax.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handshake.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
