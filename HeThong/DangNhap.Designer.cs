@@ -46,10 +46,10 @@
             // 
             this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(233, 199);
+            this.btnDangNhap.Location = new System.Drawing.Point(262, 249);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(106, 28);
+            this.btnDangNhap.Size = new System.Drawing.Size(119, 35);
             this.btnDangNhap.TabIndex = 6;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -58,48 +58,49 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(229, 95);
+            this.label1.Location = new System.Drawing.Point(258, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 16);
+            this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Tên Đăng Nhập :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(229, 146);
+            this.label2.Location = new System.Drawing.Point(258, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật Khẩu :";
             // 
             // txtTenDangNhap
             // 
-            this.txtTenDangNhap.Location = new System.Drawing.Point(233, 114);
+            this.txtTenDangNhap.Location = new System.Drawing.Point(262, 142);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(214, 22);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(240, 26);
             this.txtTenDangNhap.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(261, 7);
+            this.label3.Location = new System.Drawing.Point(281, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 36);
+            this.label3.Size = new System.Drawing.Size(208, 40);
             this.label3.TabIndex = 0;
             this.label3.Text = "Đăng Nhập";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.Red;
-            this.btnThoat.Location = new System.Drawing.Point(340, 199);
+            this.btnThoat.Location = new System.Drawing.Point(382, 249);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(106, 28);
+            this.btnThoat.Size = new System.Drawing.Size(119, 35);
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -107,10 +108,11 @@
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(233, 164);
+            this.txtMatKhau.Location = new System.Drawing.Point(262, 205);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(214, 22);
+            this.txtMatKhau.PasswordChar = '*';
+            this.txtMatKhau.Size = new System.Drawing.Size(240, 26);
             this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMatKhau_KeyDown);
             // 
@@ -122,18 +124,19 @@
             this.pictureBox.Location = new System.Drawing.Point(0, 0);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(228, 251);
+            this.pictureBox.Size = new System.Drawing.Size(256, 314);
             this.pictureBox.TabIndex = 4;
             this.pictureBox.TabStop = false;
             // 
             // labelTG
             // 
             this.labelTG.AutoSize = true;
-            this.labelTG.Location = new System.Drawing.Point(311, 56);
+            this.labelTG.Location = new System.Drawing.Point(298, 65);
             this.labelTG.Name = "labelTG";
-            this.labelTG.Size = new System.Drawing.Size(63, 16);
+            this.labelTG.Size = new System.Drawing.Size(171, 20);
             this.labelTG.TabIndex = 1;
-            this.labelTG.Text = "Thời gian";
+            this.labelTG.Text = "Ngày giờ hiện tại và TG";
+            this.labelTG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer
             // 
@@ -141,9 +144,9 @@
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 251);
+            this.ClientSize = new System.Drawing.Size(519, 314);
             this.Controls.Add(this.labelTG);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.txtMatKhau);

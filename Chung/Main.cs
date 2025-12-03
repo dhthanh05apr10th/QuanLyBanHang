@@ -20,7 +20,7 @@ namespace QuanLyBanHang.Chung
         {
             Flash flash = new Flash();
             flash.ShowDialog();
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         #region Biến toàn cục
@@ -33,8 +33,6 @@ namespace QuanLyBanHang.Chung
         HoaDon hoaDon = null;
         TaiKhoan taiKhoan = null;
         DangNhap dangNhap = null;
-        HuongDanSuDung huongDanSuDung = null;
-        Support hoTro = null;
         String hoTen = "";
 
         #endregion
@@ -42,10 +40,7 @@ namespace QuanLyBanHang.Chung
         #region Hệ Thống
         private void mnuDangNhap_Click(object sender, EventArgs e)
         {
-            if (dangNhap == null || dangNhap.IsDisposed)
-            {
-                dangNhap = new DangNhap();
-            }
+             dangNhap = new DangNhap();
 
         LamLai:
             if (dangNhap.ShowDialog() == DialogResult.OK)
@@ -55,10 +50,14 @@ namespace QuanLyBanHang.Chung
                 if (tenDangNhap == "")
                 {
                     MessageBox.Show("Vui lòng nhập tên đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    goto LamLai;
+
                 }
                 else if (matKhau == "")
                 {
                     MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    goto LamLai;
+
                 }
                 else
                 {
@@ -438,32 +437,13 @@ namespace QuanLyBanHang.Chung
         #region Trợ Giúp
        private void mnuHuongDan_Click(object sender, EventArgs e)
         {
-            if (huongDanSuDung == null || huongDanSuDung.IsDisposed)
-            {
-                huongDanSuDung = new HuongDanSuDung();
-                huongDanSuDung.MdiParent = this;
-                huongDanSuDung.FormClosed += (s, args) => huongDanSuDung = null;
-                huongDanSuDung.Show();
-            }
-            else
-            {
-                huongDanSuDung.Activate();
-            }
+            HuongDanSuDung huongDanSu = new HuongDanSuDung();
+            huongDanSu.ShowDialog();
         }        
         private void mnuHoTro_Click(object sender, EventArgs e)
         {
-            if (hoTro == null || hoTro.IsDisposed)
-            {
-                hoTro = new Support();
-                hoTro.MdiParent = this;
-                hoTro.FormClosed += (s, args) => hoTro = null;
-                hoTro.Show();
-            }
-            else
-            {
-                hoTro.Activate();
-            }
-
+            Support hoTro = new Support();
+            hoTro.ShowDialog();
         }     
 
         #endregion
