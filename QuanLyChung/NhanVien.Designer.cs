@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.cboChucVu = new System.Windows.Forms.ComboBox();
@@ -407,9 +407,9 @@
             // NgaySinh
             // 
             this.NgaySinh.DataPropertyName = "NgaySinh";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
-            this.NgaySinh.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Format = "dd/MM/yyyy";
+            this.NgaySinh.DefaultCellStyle = dataGridViewCellStyle2;
             this.NgaySinh.HeaderText = "Ngày Sinh";
             this.NgaySinh.MinimumWidth = 8;
             this.NgaySinh.Name = "NgaySinh";
