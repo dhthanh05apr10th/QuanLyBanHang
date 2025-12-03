@@ -25,8 +25,7 @@ namespace QuanLyBanHang.NghiepVu
         {
             dtpNgayBatDau.Value = DateTime.Now.AddMonths(-1);
             dtpNgayKetThuc.Value = DateTime.Now;
-
-
+            //Dm thang nao chon cai nay
         }
 
         private void btnTim_Click(object sender, EventArgs e)
