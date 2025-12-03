@@ -110,7 +110,7 @@ namespace QuanLyBanHang.QuanLyChung
                 {
                     if (maNL == "")
                     {
-                        string sql = "INSERT INTO KhoThucPham (MaNL, TenNL, SoLuong, DonViTinh) VALUES (@MaNL, @TenNL, @SoLuong, @DonViTinh)";
+                        string sql = "INSERT INTO KhoThucPham (MaNL, TenNL, SoLuongTon, DonViTinh) VALUES (@MaNL, @TenNL, @SoLuong, @DonViTinh)";
                         SqlCommand cmd = new SqlCommand(sql);
                         cmd.Parameters.AddWithValue("@MaNL", txtMaNguyenLieu.Text);
                         cmd.Parameters.AddWithValue("@TenNL", txtTenNguyenLieu.Text);
@@ -120,7 +120,7 @@ namespace QuanLyBanHang.QuanLyChung
                     }
                     else
                     {
-                        string sql = "UPDATE KhoThucPham SET TenNL = @TenNL, SoLuong = @SoLuong, DonViTinh = @DonViTinh WHERE MaNL = @MaNL";
+                        string sql = "UPDATE KhoThucPham SET TenNL = @TenNL, SoLuongTon = @SoLuong, DonViTinh = @DonViTinh WHERE MaNL = @MaNL";
                         SqlCommand cmd = new SqlCommand(sql);
                         cmd.Parameters.AddWithValue("@MaNL", txtMaNguyenLieu.Text);
                         cmd.Parameters.AddWithValue("@TenNL", txtTenNguyenLieu.Text);
