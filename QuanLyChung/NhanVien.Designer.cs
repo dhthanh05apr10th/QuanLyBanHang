@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.cboChucVu = new System.Windows.Forms.ComboBox();
@@ -113,7 +113,7 @@
             this.cboChucVu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboChucVu.Name = "cboChucVu";
             this.cboChucVu.Size = new System.Drawing.Size(488, 28);
-            this.cboChucVu.TabIndex = 8;
+            this.cboChucVu.TabIndex = 4;
             // 
             // label7
             // 
@@ -122,9 +122,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(316, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(338, 40);
+            this.label7.Size = new System.Drawing.Size(348, 40);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Quản Lí Nhân Viên";
+            this.label7.Text = "Quản Lý Nhân Viên";
             // 
             // dtpNgaySinh
             // 
@@ -135,7 +135,7 @@
             this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(181, 26);
-            this.dtpNgaySinh.TabIndex = 5;
+            this.dtpNgaySinh.TabIndex = 3;
             // 
             // rdNu
             // 
@@ -145,7 +145,7 @@
             this.rdNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdNu.Name = "rdNu";
             this.rdNu.Size = new System.Drawing.Size(54, 24);
-            this.rdNu.TabIndex = 4;
+            this.rdNu.TabIndex = 6;
             this.rdNu.TabStop = true;
             this.rdNu.Text = "Nữ";
             this.rdNu.UseVisualStyleBackColor = true;
@@ -158,7 +158,7 @@
             this.rdNam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdNam.Name = "rdNam";
             this.rdNam.Size = new System.Drawing.Size(67, 24);
-            this.rdNam.TabIndex = 3;
+            this.rdNam.TabIndex = 5;
             this.rdNam.Text = "Nam";
             this.rdNam.UseVisualStyleBackColor = true;
             // 
@@ -172,7 +172,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(118, 38);
-            this.btnThoat.TabIndex = 2;
+            this.btnThoat.TabIndex = 14;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -189,7 +189,7 @@
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(118, 38);
-            this.btnHuy.TabIndex = 2;
+            this.btnHuy.TabIndex = 13;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -206,7 +206,7 @@
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(118, 38);
-            this.btnLuu.TabIndex = 2;
+            this.btnLuu.TabIndex = 12;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -223,7 +223,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(118, 38);
-            this.btnXoa.TabIndex = 2;
+            this.btnXoa.TabIndex = 11;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -240,7 +240,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(118, 40);
-            this.btnSua.TabIndex = 2;
+            this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -257,7 +257,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(118, 38);
-            this.btnThem.TabIndex = 2;
+            this.btnThem.TabIndex = 9;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -271,7 +271,7 @@
             this.txtSoDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoDT.Name = "txtSoDT";
             this.txtSoDT.Size = new System.Drawing.Size(184, 26);
-            this.txtSoDT.TabIndex = 1;
+            this.txtSoDT.TabIndex = 8;
             // 
             // txtDiaChi
             // 
@@ -280,7 +280,7 @@
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(184, 26);
-            this.txtDiaChi.TabIndex = 1;
+            this.txtDiaChi.TabIndex = 7;
             // 
             // txtHovaTen
             // 
@@ -289,7 +289,7 @@
             this.txtHovaTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHovaTen.Name = "txtHovaTen";
             this.txtHovaTen.Size = new System.Drawing.Size(181, 26);
-            this.txtHovaTen.TabIndex = 1;
+            this.txtHovaTen.TabIndex = 2;
             // 
             // txtMaNV
             // 
@@ -407,9 +407,9 @@
             // NgaySinh
             // 
             this.NgaySinh.DataPropertyName = "NgaySinh";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Format = "dd/MM/yyyy";
-            this.NgaySinh.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
+            this.NgaySinh.DefaultCellStyle = dataGridViewCellStyle1;
             this.NgaySinh.HeaderText = "Ngày Sinh";
             this.NgaySinh.MinimumWidth = 8;
             this.NgaySinh.Name = "NgaySinh";

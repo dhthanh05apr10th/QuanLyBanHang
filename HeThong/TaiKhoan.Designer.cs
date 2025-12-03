@@ -109,7 +109,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(120, 35);
-            this.btnThoat.TabIndex = 18;
+            this.btnThoat.TabIndex = 12;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -126,7 +126,7 @@
             this.btnHuyBo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.Size = new System.Drawing.Size(120, 35);
-            this.btnHuyBo.TabIndex = 17;
+            this.btnHuyBo.TabIndex = 11;
             this.btnHuyBo.Text = "Hủy bỏ";
             this.btnHuyBo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuyBo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -143,7 +143,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(120, 35);
-            this.btnXoa.TabIndex = 15;
+            this.btnXoa.TabIndex = 9;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -160,7 +160,7 @@
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(120, 35);
-            this.btnLuu.TabIndex = 16;
+            this.btnLuu.TabIndex = 10;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -177,7 +177,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(120, 35);
-            this.btnSua.TabIndex = 14;
+            this.btnSua.TabIndex = 8;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -194,7 +194,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(120, 35);
-            this.btnThem.TabIndex = 13;
+            this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -212,7 +212,7 @@
             this.cboMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboMaNV.Name = "cboMaNV";
             this.cboMaNV.Size = new System.Drawing.Size(193, 28);
-            this.cboMaNV.TabIndex = 5;
+            this.cboMaNV.TabIndex = 2;
             // 
             // cboQuyenHan
             // 
@@ -225,7 +225,7 @@
             this.cboQuyenHan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboQuyenHan.Name = "cboQuyenHan";
             this.cboQuyenHan.Size = new System.Drawing.Size(193, 28);
-            this.cboQuyenHan.TabIndex = 6;
+            this.cboQuyenHan.TabIndex = 3;
             // 
             // txtGhiChu
             // 
@@ -234,7 +234,7 @@
             this.txtGhiChu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(193, 26);
-            this.txtGhiChu.TabIndex = 12;
+            this.txtGhiChu.TabIndex = 6;
             // 
             // txtTenDangNhap
             // 
@@ -243,7 +243,7 @@
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(193, 26);
-            this.txtTenDangNhap.TabIndex = 10;
+            this.txtTenDangNhap.TabIndex = 4;
             // 
             // txtMatKhau
             // 
@@ -253,7 +253,7 @@
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '•';
             this.txtMatKhau.Size = new System.Drawing.Size(193, 26);
-            this.txtMatKhau.TabIndex = 11;
+            this.txtMatKhau.TabIndex = 5;
             // 
             // label2
             // 
@@ -273,7 +273,7 @@
             this.txtMaTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaTaiKhoan.Name = "txtMaTaiKhoan";
             this.txtMaTaiKhoan.Size = new System.Drawing.Size(193, 26);
-            this.txtMaTaiKhoan.TabIndex = 4;
+            this.txtMaTaiKhoan.TabIndex = 1;
             // 
             // label5
             // 

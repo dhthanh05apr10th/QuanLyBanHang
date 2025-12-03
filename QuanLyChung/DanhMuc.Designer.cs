@@ -90,7 +90,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(116, 49);
-            this.btnThoat.TabIndex = 10;
+            this.btnThoat.TabIndex = 8;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -107,7 +107,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(116, 49);
-            this.btnXoa.TabIndex = 8;
+            this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,7 +135,7 @@
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(116, 49);
-            this.btnHuy.TabIndex = 9;
+            this.btnHuy.TabIndex = 7;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -152,7 +152,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(116, 49);
-            this.btnSua.TabIndex = 6;
+            this.btnSua.TabIndex = 4;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -169,7 +169,7 @@
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(116, 49);
-            this.btnLuu.TabIndex = 7;
+            this.btnLuu.TabIndex = 5;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -184,7 +184,7 @@
             this.txtMaDM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaDM.Name = "txtMaDM";
             this.txtMaDM.Size = new System.Drawing.Size(227, 31);
-            this.txtMaDM.TabIndex = 2;
+            this.txtMaDM.TabIndex = 1;
             // 
             // btnThem
             // 
@@ -196,7 +196,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(116, 49);
-            this.btnThem.TabIndex = 5;
+            this.btnThem.TabIndex = 3;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -211,7 +211,7 @@
             this.txtTenDM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenDM.Name = "txtTenDM";
             this.txtTenDM.Size = new System.Drawing.Size(227, 31);
-            this.txtTenDM.TabIndex = 4;
+            this.txtTenDM.TabIndex = 2;
             // 
             // label7
             // 
@@ -220,9 +220,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(237, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(333, 40);
+            this.label7.Size = new System.Drawing.Size(343, 40);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Quản Lí Danh Mục";
+            this.label7.Text = "Quản Lý Danh Mục";
             // 
             // dgvDanhMuc
             // 

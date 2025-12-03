@@ -132,7 +132,7 @@
             this.txtSoDienThoai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(168, 31);
-            this.txtSoDienThoai.TabIndex = 7;
+            this.txtSoDienThoai.TabIndex = 2;
             // 
             // txtDiemTichLuy
             // 
@@ -142,7 +142,7 @@
             this.txtDiemTichLuy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDiemTichLuy.Name = "txtDiemTichLuy";
             this.txtDiemTichLuy.Size = new System.Drawing.Size(157, 31);
-            this.txtDiemTichLuy.TabIndex = 8;
+            this.txtDiemTichLuy.TabIndex = 5;
             // 
             // txtHoTen
             // 
@@ -152,7 +152,7 @@
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(168, 31);
-            this.txtHoTen.TabIndex = 6;
+            this.txtHoTen.TabIndex = 3;
             // 
             // btnThem
             // 
@@ -164,7 +164,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(130, 49);
-            this.btnThem.TabIndex = 10;
+            this.btnThem.TabIndex = 6;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -179,7 +179,7 @@
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(168, 31);
-            this.txtMaKH.TabIndex = 5;
+            this.txtMaKH.TabIndex = 1;
             // 
             // btnLuu
             // 
@@ -191,7 +191,7 @@
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(130, 49);
-            this.btnLuu.TabIndex = 13;
+            this.btnLuu.TabIndex = 9;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -219,7 +219,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(130, 49);
-            this.btnSua.TabIndex = 11;
+            this.btnSua.TabIndex = 7;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -247,7 +247,7 @@
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(130, 49);
-            this.btnHuy.TabIndex = 14;
+            this.btnHuy.TabIndex = 10;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -275,7 +275,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(130, 49);
-            this.btnXoa.TabIndex = 12;
+            this.btnXoa.TabIndex = 8;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -304,7 +304,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(130, 49);
-            this.btnThoat.TabIndex = 15;
+            this.btnThoat.TabIndex = 11;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -330,7 +330,7 @@
             this.dtpNgayDangKy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpNgayDangKy.Name = "dtpNgayDangKy";
             this.dtpNgayDangKy.Size = new System.Drawing.Size(157, 26);
-            this.dtpNgayDangKy.TabIndex = 9;
+            this.dtpNgayDangKy.TabIndex = 4;
             // 
             // panel1
             // 

@@ -64,9 +64,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(335, 21);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(228, 40);
+            this.label7.Size = new System.Drawing.Size(238, 40);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Quản Lí Kho";
+            this.label7.Text = "Quản Lý Kho";
             // 
             // label1
             // 
@@ -86,7 +86,7 @@
             this.txtMaNguyenLieu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaNguyenLieu.Name = "txtMaNguyenLieu";
             this.txtMaNguyenLieu.Size = new System.Drawing.Size(191, 26);
-            this.txtMaNguyenLieu.TabIndex = 5;
+            this.txtMaNguyenLieu.TabIndex = 0;
             // 
             // label3
             // 
@@ -106,7 +106,7 @@
             this.txtSoLuongTon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoLuongTon.Name = "txtSoLuongTon";
             this.txtSoLuongTon.Size = new System.Drawing.Size(182, 26);
-            this.txtSoLuongTon.TabIndex = 7;
+            this.txtSoLuongTon.TabIndex = 2;
             // 
             // dgvKhoThucPham
             // 
@@ -192,7 +192,7 @@
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(123, 49);
-            this.btnLuu.TabIndex = 12;
+            this.btnLuu.TabIndex = 7;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -220,7 +220,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(123, 49);
-            this.btnXoa.TabIndex = 11;
+            this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -237,7 +237,7 @@
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(123, 49);
-            this.btnHuy.TabIndex = 13;
+            this.btnHuy.TabIndex = 8;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -254,7 +254,7 @@
             this.btnSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(123, 49);
-            this.btnSua.TabIndex = 10;
+            this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -268,7 +268,7 @@
             this.txtDonViTinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDonViTinh.Name = "txtDonViTinh";
             this.txtDonViTinh.Size = new System.Drawing.Size(182, 26);
-            this.txtDonViTinh.TabIndex = 8;
+            this.txtDonViTinh.TabIndex = 3;
             // 
             // btnThoat
             // 
@@ -281,7 +281,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(133, 49);
-            this.btnThoat.TabIndex = 14;
+            this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -295,7 +295,7 @@
             this.txtTenNguyenLieu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTenNguyenLieu.Name = "txtTenNguyenLieu";
             this.txtTenNguyenLieu.Size = new System.Drawing.Size(191, 26);
-            this.txtTenNguyenLieu.TabIndex = 6;
+            this.txtTenNguyenLieu.TabIndex = 1;
             // 
             // btnThem
             // 
@@ -307,7 +307,7 @@
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(123, 49);
-            this.btnThem.TabIndex = 9;
+            this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

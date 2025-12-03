@@ -156,9 +156,11 @@ namespace QuanLyBanHang.Chung
             mnuDangNhap.Enabled = false;
             btnDangNhap.Enabled = false;
 
-            mnuDangXuat.Enabled = true;
+            
             btnDangXuat.Enabled = true;
+            mnuThongKe.Enabled = true;
 
+            mnuDoanhThu.Enabled = true;
             mnuChucVu.Enabled = true;
             btnChucVu.Enabled = true;
             mnuDanhMuc.Enabled = true;
@@ -189,6 +191,7 @@ namespace QuanLyBanHang.Chung
             mnuDangXuat.Enabled = true;
             btnDangXuat.Enabled = true;
 
+            mnuDoanhThu.Enabled = false;
             mnuChucVu.Enabled = true;
             btnChucVu.Enabled = true;
             mnuDanhMuc.Enabled = true;
@@ -211,7 +214,6 @@ namespace QuanLyBanHang.Chung
             mnuTaiKhoan.Enabled = false;
             btnTaiKhoan.Enabled = false;
 
-            mnuDoanhThu.Enabled = true;
 
             lblTrangThai.Text = "Quản Lý: " + hoTen;
         }
@@ -223,6 +225,7 @@ namespace QuanLyBanHang.Chung
             mnuDangXuat.Enabled = true;
             btnDangXuat.Enabled = true;
 
+            mnuDoanhThu.Enabled = false;
             mnuChucVu.Enabled = false;
             btnChucVu.Enabled = false;
             mnuDanhMuc.Enabled = false;
@@ -233,8 +236,8 @@ namespace QuanLyBanHang.Chung
             btnKhoThucPham.Enabled = true;
             mnuNhanVien.Enabled = false;
             btnNhanVien.Enabled = false;
-            mnuSanPham.Enabled = true;
-            btnSanPham.Enabled = true;
+            mnuSanPham.Enabled = false;
+            btnSanPham.Enabled = false;
             mnuHoaDon.Enabled = true;
             btnHoaDon.Enabled = true;
 
@@ -243,7 +246,6 @@ namespace QuanLyBanHang.Chung
             mnuTaiKhoan.Enabled = false;
             btnTaiKhoan.Enabled = false;
 
-            mnuDoanhThu.Enabled = true;
 
             lblTrangThai.Text = "NhanVien: " + hoTen;
         }
@@ -271,7 +273,8 @@ namespace QuanLyBanHang.Chung
             mnuHoaDon.Enabled = false;
             btnHoaDon.Enabled = false;
 
-            mnuDoanhThu.Enabled = false;
+            mnuTaiKhoan.Enabled = false;
+            btnTaiKhoan.Enabled = false;
 
             lblTrangThai.Text = "Chưa đăng nhập.";
         }
