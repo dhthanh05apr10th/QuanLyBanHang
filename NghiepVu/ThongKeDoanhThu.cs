@@ -35,9 +35,7 @@ namespace QuanLyBanHang.NghiepVu
 
             DateTime denNgay = dtpNgayKetThuc.Value.Date.AddDays(1).AddSeconds(-1);
 
-            string sql = @"SELECT NV.MaNV, NV.HoTen,
-                    COUNT(HD.MaHD) AS SoLuongHoaDon, 
-                    SUM(HD.TongTien - HD.GiamGia) AS DoanhThu
+            string sql = @"SELECT NV.MaNV, NV.HoTen, COUNT(HD.MaHD) AS SoLuongHoaDon, SUM(HD.TongTien - HD.GiamGia) AS DoanhThu
                 FROM HoaDon HD
                 JOIN NhanVien NV ON HD.MaNV = NV.MaNV
                 WHERE HD.NgayLap >= @TuNgay AND HD.NgayLap <= @DenNgay

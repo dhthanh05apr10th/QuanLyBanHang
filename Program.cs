@@ -19,7 +19,7 @@ namespace QuanLyBanHang
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NghiepVu.ThongKeDoanhThu());
+            Application.Run(new Main());
         }
     }
 }

@@ -583,6 +583,7 @@
             this.ClientSize = new System.Drawing.Size(950, 641);
             this.Controls.Add(this.splitContainer1);
             this.Name = "HoaDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HoaDon";
             this.Load += new System.EventHandler(this.HoaDon_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

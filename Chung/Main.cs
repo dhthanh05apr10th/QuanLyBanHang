@@ -1,4 +1,5 @@
 ﻿using QuanLyBanHang.HeThong;
+using QuanLyBanHang.NghiepVu;
 using QuanLyBanHang.QuanLyChung;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,7 @@ namespace QuanLyBanHang.Chung
         HoaDon hoaDon = null;
         TaiKhoan taiKhoan = null;
         DangNhap dangNhap = null;
+        ThongKeDoanhThu thongKeDoanhThu = null;
         String hoTen = "";
 
         #endregion
@@ -431,7 +433,20 @@ namespace QuanLyBanHang.Chung
         #endregion
 
         #region Thống Kê Doanh Thu
-
+        private void mnuDoanhThu_Click(object sender, EventArgs e)
+        {
+            if (thongKeDoanhThu == null || thongKeDoanhThu.IsDisposed)
+            {
+                thongKeDoanhThu = new ThongKeDoanhThu();
+                thongKeDoanhThu.MdiParent = this;
+                thongKeDoanhThu.FormClosed += (s, args) => thongKeDoanhThu = null;
+                thongKeDoanhThu.Show();
+            }
+            else
+            {
+                thongKeDoanhThu.Activate();
+            }
+        }
         #endregion
 
         #region Trợ Giúp
@@ -509,6 +524,8 @@ namespace QuanLyBanHang.Chung
             mnuHoaDon_Click_1(sender, e);
         }
         #endregion
+
+        
     }
 }
 

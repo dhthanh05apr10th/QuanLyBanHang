@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpNgayBatDau = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuongHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -62,17 +62,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHD)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(219, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 45);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Thống kê doanh thu";
-            // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.btnHuy);
             this.groupBox1.Controls.Add(this.btnTim);
             this.groupBox1.Controls.Add(this.dtpNgayKetThuc);
@@ -148,6 +140,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.Controls.Add(this.dgvTongHop);
             this.groupBox2.Location = new System.Drawing.Point(12, 170);
             this.groupBox2.Name = "groupBox2";
@@ -158,6 +151,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox3.Controls.Add(this.dgvChiTietHD);
             this.groupBox3.Location = new System.Drawing.Point(12, 402);
             this.groupBox3.Name = "groupBox3";
@@ -168,7 +162,9 @@
             // 
             // btnThoat
             // 
+            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.Red;
             this.btnThoat.Location = new System.Drawing.Point(697, 635);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(133, 45);
@@ -179,6 +175,7 @@
             // 
             // txtTongdoanhThu
             // 
+            this.txtTongdoanhThu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTongdoanhThu.Location = new System.Drawing.Point(160, 358);
             this.txtTongdoanhThu.Name = "txtTongdoanhThu";
             this.txtTongdoanhThu.Size = new System.Drawing.Size(667, 22);
@@ -186,6 +183,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 362);
@@ -263,8 +261,8 @@
             // DonGiaBan
             // 
             this.DonGiaBan.DataPropertyName = "DonGiaBan";
-            dataGridViewCellStyle10.Format = "N0";
-            this.DonGiaBan.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle7.Format = "N0";
+            this.DonGiaBan.DefaultCellStyle = dataGridViewCellStyle7;
             this.DonGiaBan.HeaderText = "Đơn giá bán";
             this.DonGiaBan.MinimumWidth = 6;
             this.DonGiaBan.Name = "DonGiaBan";
@@ -273,8 +271,8 @@
             // ThanhTien
             // 
             this.ThanhTien.DataPropertyName = "ThanhTien";
-            dataGridViewCellStyle11.Format = "N0";
-            this.ThanhTien.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle8.Format = "N0";
+            this.ThanhTien.DefaultCellStyle = dataGridViewCellStyle8;
             this.ThanhTien.HeaderText = "Thành tiền";
             this.ThanhTien.MinimumWidth = 6;
             this.ThanhTien.Name = "ThanhTien";
@@ -307,24 +305,35 @@
             // DoanhThu
             // 
             this.DoanhThu.DataPropertyName = "DoanhThu";
-            dataGridViewCellStyle12.Format = "N0";
-            this.DoanhThu.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.Format = "N0";
+            this.DoanhThu.DefaultCellStyle = dataGridViewCellStyle9;
             this.DoanhThu.HeaderText = "Doanh thu";
             this.DoanhThu.MinimumWidth = 6;
             this.DoanhThu.Name = "DoanhThu";
             this.DoanhThu.ReadOnly = true;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(229, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(337, 39);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Thống kê doanh thu";
             // 
             // ThongKeDoanhThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 704);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTongdoanhThu);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "ThongKeDoanhThu";
             this.Text = "Thống kê doanh thu";
@@ -341,8 +350,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker dtpNgayKetThuc;
         private System.Windows.Forms.DateTimePicker dtpNgayBatDau;
@@ -366,5 +373,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongHoaDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn DoanhThu;
+        private System.Windows.Forms.Label label4;
     }
 }
