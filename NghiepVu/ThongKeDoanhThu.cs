@@ -137,7 +137,7 @@ namespace QuanLyBanHang.NghiepVu
             // 2. Làm trống ô tổng doanh thu
             txtTongdoanhThu.Text = string.Empty;
 
-            // 3. Reset ngày về giá trị mặc định ban đầu (giống hàm Load)
+            // 3. Reset ngày về giá trị mặc định ban đầu
             dtpNgayBatDau.Value = DateTime.Now.AddMonths(-1);
             dtpNgayKetThuc.Value = DateTime.Now;
         }
