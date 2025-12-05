@@ -37,13 +37,21 @@ namespace QuanLyBanHang.HeThong
             cboMaNV.DisplayMember = "HoTen";
             cboMaNV.ValueMember = "MaNV";
 
+            cboQuyenHan.DataSource = null;
 
-            MyDataTable taiKhoan = new MyDataTable();
-            taiKhoan.OpenConnection();
-            string taikhoansql = "SELECT * FROM TaiKhoan";
-            SqlCommand QuyenHancmd = new SqlCommand(taikhoansql);
-            taiKhoan.Fill(QuyenHancmd);
-            cboQuyenHan.DataSource = taiKhoan;
+            // 2. Xóa tất cả các mục đã có (chỉ cần nếu bạn đã thêm Items thủ công)
+            cboQuyenHan.Items.Clear();
+
+            // 3. Nạp lại dữ liệu tĩnh (đã được sửa logic ở trước)
+            // TẠO DATA TABLE TĨNH
+            DataTable dtQuyenHan = new DataTable();
+            dtQuyenHan.Columns.Add("QuyenHan", typeof(string));
+            dtQuyenHan.Rows.Add("Admin");
+            dtQuyenHan.Rows.Add("Manager");
+            dtQuyenHan.Rows.Add("Employee");
+
+            // 4. Gán lại DataSource MỚI
+            cboQuyenHan.DataSource = dtQuyenHan;
             cboQuyenHan.DisplayMember = "QuyenHan";
             cboQuyenHan.ValueMember = "QuyenHan";
 

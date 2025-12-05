@@ -158,6 +158,7 @@ namespace QuanLyBanHang.Chung
 
             
             btnDangXuat.Enabled = true;
+            mnuDangXuat.Enabled = true;
             mnuThongKe.Enabled = true;
 
             mnuDoanhThu.Enabled = true;
@@ -191,25 +192,23 @@ namespace QuanLyBanHang.Chung
             mnuDangXuat.Enabled = true;
             btnDangXuat.Enabled = true;
 
-            mnuDoanhThu.Enabled = false;
+            mnuDoanhThu.Enabled = true;
             mnuChucVu.Enabled = true;
             btnChucVu.Enabled = true;
             mnuDanhMuc.Enabled = true;
             btnDanhMuc.Enabled = true;
-
             mnuKhachHang.Enabled = true;
             btnKhachHang.Enabled = true;
             mnuKho.Enabled = true;
             btnKhoThucPham.Enabled = true;
             mnuNhanVien.Enabled = true;
             btnNhanVien.Enabled = true;
+            mnuSanPham.Enabled = true;
+            btnSanPham.Enabled = true;
 
-            mnuSanPham.Enabled = false;
-            btnSanPham.Enabled = false;
+
             mnuHoaDon.Enabled = false;
             btnHoaDon.Enabled = false;
-
-
 
             mnuTaiKhoan.Enabled = false;
             btnTaiKhoan.Enabled = false;
@@ -230,18 +229,19 @@ namespace QuanLyBanHang.Chung
             btnChucVu.Enabled = false;
             mnuDanhMuc.Enabled = false;
             btnDanhMuc.Enabled = false;
+
             mnuKhachHang.Enabled = true;
             btnKhachHang.Enabled = true;
             mnuKho.Enabled = true;
             btnKhoThucPham.Enabled = true;
+
             mnuNhanVien.Enabled = false;
             btnNhanVien.Enabled = false;
             mnuSanPham.Enabled = false;
             btnSanPham.Enabled = false;
+
             mnuHoaDon.Enabled = true;
             btnHoaDon.Enabled = true;
-
-
 
             mnuTaiKhoan.Enabled = false;
             btnTaiKhoan.Enabled = false;

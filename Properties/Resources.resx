@@ -127,6 +127,9 @@
   <data name="login-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="flag-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="businessman2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\businessman2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -156,9 +159,6 @@
   </data>
   <data name="chucnang" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chucnang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="briefcase_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\briefcase_document.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_headset" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_headset.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,11 +193,14 @@
   <data name="login-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hotpot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hotpot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="refresh-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flag-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flag-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="briefcase_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\briefcase_document.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,7 +223,7 @@
   <data name="blocks-2-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blocks-2-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hotpot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hotpot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="view-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
