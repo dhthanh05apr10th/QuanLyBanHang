@@ -205,10 +205,8 @@ namespace QuanLyBanHang.Chung
             btnNhanVien.Enabled = true;
             mnuSanPham.Enabled = true;
             btnSanPham.Enabled = true;
-
-
-            mnuHoaDon.Enabled = false;
-            btnHoaDon.Enabled = false;
+            mnuHoaDon.Enabled = true;
+            btnHoaDon.Enabled = true;
 
             mnuTaiKhoan.Enabled = false;
             btnTaiKhoan.Enabled = false;
