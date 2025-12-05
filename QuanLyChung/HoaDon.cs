@@ -334,34 +334,7 @@ namespace QuanLyBanHang.QuanLyChung
 
         private void btnXuatHD_Click(object sender, EventArgs e)
         {
-            string maHDCanXuat = txtMaHoaDon.Text;
-
-            if(string.IsNullOrEmpty(maHDCanXuat) || maHDCanXuat.StartsWith("HD_TEMP"))
-            {
-                MessageBox.Show("Vui lòng lưu hóa đơn trước khi xuất.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            try
-            {
-                DataTable dtHeader = GetHoaDonHeader(maHDCanXuat);
-                DataTable dtDetails = GetHoaDonDetails(maHDCanXuat);
-
-                if(dtHeader.Rows.Count > 0 && dtDetails.Rows.Count > 0)
-                {
-                    BaoCao viewer = new BaoCao(dtHeader, dtDetails);
-                    viewer.ShowDialog();
-
-                    MessageBox.Show($"Đã chuẩn bị dữ liệu cho HĐ {maHDCanXuat}. Vui lòng tích hợp Report Viewer.", "Hoàn tất");
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy dữ liệu cho hóa đơn này.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }catch(Exception ex)
-            {
-                MessageBox.Show("Lỗi khi chuẩn bị dữ liệu xuất hóa đơn: " + ex.Message, "Lỗi");
-            }
+            
         }
 
         private void btnDong_Click(object sender, EventArgs e)
